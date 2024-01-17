@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductoMVVMSQLite.Views.EditarProductoPage"
+             Title="Editar Producto">
+    <VerticalStackLayout>
+        <!-- Campos de edición -->
+        <Entry Placeholder="Nombre" Text="{Binding Producto.Nombre}" />
+        <Entry Placeholder="Cantidad" Text="{Binding Producto.Cantidad}" />
+        <Entry Placeholder="Descripción" Text="{Binding Producto.Descripcion}" />
+
+        <!-- Botón para guardar cambios -->
+        <Button Text="Guardar Cambios" Command="{Binding GuardarCambiosCommand}" CommandParameter="Guardar" />
+    </VerticalStackLayout>
+</ContentPage>
